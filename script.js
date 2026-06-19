@@ -2,8 +2,8 @@
 const displayConfig = {
     "schedules": [
         {
-            "startTime": "10:00",
-            "endTime": "14:00",
+            "startTime": "09:00",
+            "endTime": "16:00",
             "images": {
                 "horizontal": "assets/Combo 2 presas base horizontal.png",
                 "vertical": "assets/Combo 2 presas base vertical.png"
@@ -11,7 +11,7 @@ const displayConfig = {
         },
         {
             "startTime": "16:00",
-            "endTime": "20:00",
+            "endTime": "21:00",
             "images": {
                 "horizontal": "assets/Gus box base horizontal.png",
                 "vertical": "assets/Gus box base vertical.png"
