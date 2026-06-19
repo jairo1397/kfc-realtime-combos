@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'URW-DIN';
+    src: url('assets/fonts/URW-DIN.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+#bgImage {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: block !important;
+    object-fit: fill !important;
+    z-index: 1 !important;
+}
+
+/* Tamaños específicos de pantalla solicitados (sólo usamos las clases para aplicar los estilos de la hora) */
+body.display-horizontal {
+    /* El tamaño se ajusta dinámicamente con 100vw/100vh */
+}
+
+body.display-vertical {
+    /* El tamaño se ajusta dinámicamente con 100vw/100vh */
+}
+
+/* Estilo base de la hora */
+#timeDisplay {
+    position: absolute;
+    color: #000000;
+    font-family: 'URW-DIN', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 10;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* ====== TAMAÑOS Y POSICIONES INDIVIDUALES ====== */
+
+/* 1. Pantalla HORIZONTAL */
+body.display-horizontal #timeDisplay {
+    bottom: 25px;
+    right: 20px;
+}
+
+body.display-horizontal #timeDisplay .time-main {
+    font-size: 80px;
+    -webkit-text-stroke: 5px black;
+    /* Fuerza grosor extra */
+    /* Tamaño de los números (hora y minutos) */
+}
+
+body.display-horizontal #timeDisplay .am-pm {
+    font-size: 20px;
+    -webkit-text-stroke: 1.5px black;
+    /* Tamaño independiente para el AM/PM */
+    margin-top: 20px;
+    /* Alineación hacia arriba */
+}
+
+/* 2. Pantalla VERTICAL */
+body.display-vertical #timeDisplay {
+    bottom: 10px;
+    left: 50px;
+}
+
+body.display-vertical #timeDisplay .time-main {
+    font-size: 120px;
+    -webkit-text-stroke: 4px black;
+    /* Fuerza grosor extra agresivo */
+    /* Tamaño de los números (hora y minutos) */
+}
+
+body.display-vertical #timeDisplay .am-pm {
+    font-size: 40px;
+    -webkit-text-stroke: 1px black;
+    /* Tamaño independiente para el AM/PM */
+    margin-top: 20px;
+    /* Alineación perfecta hacia arriba */
+}
