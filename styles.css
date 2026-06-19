@@ -66,7 +66,7 @@ body.display-horizontal #timeDisplay {
 }
 
 body.display-horizontal #timeDisplay .time-main {
-    font-size: 50px;
+    font-size: 80px;
     -webkit-text-stroke: 5px black;
     /* Fuerza grosor extra */
     /* Tamaño de los números (hora y minutos) */
