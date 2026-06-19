@@ -82,20 +82,20 @@ body.display-horizontal #timeDisplay .am-pm {
 
 /* 2. Pantalla VERTICAL */
 body.display-vertical #timeDisplay {
-    bottom: 10px;
+    bottom: 8px;
     left: 50px;
 }
 
 body.display-vertical #timeDisplay .time-main {
     font-size: 120px;
-    -webkit-text-stroke: 4px black;
+    -webkit-text-stroke: 5px black;
     /* Fuerza grosor extra agresivo */
     /* Tamaño de los números (hora y minutos) */
 }
 
 body.display-vertical #timeDisplay .am-pm {
     font-size: 40px;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1.5px black;
     /* Tamaño independiente para el AM/PM */
     margin-top: 20px;
     /* Alineación perfecta hacia arriba */
