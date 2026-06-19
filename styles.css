@@ -54,7 +54,7 @@ body.display-vertical {
     z-index: 10;
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 6px;
 }
 
 /* ====== TAMAÑOS Y POSICIONES INDIVIDUALES ====== */
@@ -66,14 +66,14 @@ body.display-horizontal #timeDisplay {
 }
 
 body.display-horizontal #timeDisplay .time-main {
-    font-size: 80px;
+    font-size: 85px;
     -webkit-text-stroke: 5px black;
     /* Fuerza grosor extra */
     /* Tamaño de los números (hora y minutos) */
 }
 
 body.display-horizontal #timeDisplay .am-pm {
-    font-size: 20px;
+    font-size: 18px;
     -webkit-text-stroke: 1.5px black;
     /* Tamaño independiente para el AM/PM */
     margin-top: 20px;
